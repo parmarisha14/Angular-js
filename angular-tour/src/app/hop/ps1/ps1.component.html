@@ -1,0 +1,26 @@
+<h3>Interpolation Example</h3>
+
+<p>Student Name: {{ snm }}</p>
+<p>Student Number: {{ rno }}</p>
+<p>Course: {{ course }}</p>
+<p>Marks: {{ marks }}</p>
+<p>Status: {{ marks >= 40 ? 'Pass' : 'Fail' }}</p>
+
+<hr />
+
+<h2>Login Form</h2>
+
+<input type="text" placeholder="Enter Username" #username />
+<br /><br />
+
+<input type="password" placeholder="Enter Password" #password />
+<br /><br />
+
+<button (click)="showdata(username.value, password.value)">
+  Login
+</button>
+
+<br /><br />
+
+<p>Username: {{ unm }}</p>
+<p>Password: {{ pwd }}</p>
